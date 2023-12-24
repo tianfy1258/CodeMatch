@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def hello_world(a: int):
+def hello_world(a):
     return str(a)
 
 @app.route('/process_list', methods=['POST'])
